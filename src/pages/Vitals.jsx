@@ -5,7 +5,7 @@ export default function Vitals() {
         <p>PLASMA USA</p>
         <ul>
           <li>
-            <a class="links" href="../html/home.html">
+            <a className="links" href="../html/home.html">
               {" "}
               Home{" "}
             </a>
@@ -13,9 +13,9 @@ export default function Vitals() {
         </ul>
       </nav>
       <main id="main">
-        <section class="screening-info">
-          <div class="profile" id="profile"></div>
-          <div class="vitals">
+        <section className="screening-info">
+          <div className="profile" id="profile"></div>
+          <div className="vitals">
             <table>
               <tr>
                 <th>Activity</th>
@@ -81,15 +81,15 @@ export default function Vitals() {
               </tr>
             </table>
           </div>
-          <div class="check-results">
-            <button type="button" class="check-btn" id="result-btn">
+          <div className="check-results">
+            <button type="button" className="check-btn" id="result-btn">
               Check Results
             </button>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
+      <footer className="footer">
         <p>&copy; PLASMA USA 2023</p>
       </footer>
     </div>
