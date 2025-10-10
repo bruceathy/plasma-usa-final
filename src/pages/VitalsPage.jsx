@@ -1,4 +1,4 @@
-export default function Vitals() {
+export default function VitalsPage() {
   return (
     <div>
       <nav>

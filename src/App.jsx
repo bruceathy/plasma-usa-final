@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./style.css";
-import Home from "./pages/Home";
-import Vitals from "./pages/Vitals";
+import Home from "./pages/HomePage";
+import Vitals from "./pages/VitalsPage";
 export default function App() {
   return (
     <Router>
