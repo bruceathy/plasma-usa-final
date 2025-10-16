@@ -1,17 +1,9 @@
+import Navbar from "../components/Navbar";
+
 export default function VitalsPage() {
   return (
     <div>
-      <nav>
-        <p>PLASMA USA</p>
-        <ul>
-          <li>
-            <a className="links" href="../html/home.html">
-              {" "}
-              Home{" "}
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
       <main id="main">
         <section className="screening-info">
           <div className="profile" id="profile"></div>

@@ -1,20 +1,11 @@
+import Navbar from "../components/Navbar";
+
 export default function HomePage() {
   return (
     <div>
-      <nav>
-        <p>PLASMA USA</p>
-        <ul>
-          <li>
-            <a className="links" href="/index.html">
-              Vitals
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
       <main className="error-msg">
-        <img src="../imgs/crying.gif" className="gif" />
-        <h1>ERROR</h1>
-        <p>Page not found.</p>
+        <h1>HOME</h1>
       </main>
       <footer className="footer">
         <p>&copy; "PLASMA USA" 2023</p>
