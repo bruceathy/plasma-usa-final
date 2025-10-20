@@ -6,10 +6,12 @@ export default function ErrorPage() {
   return (
     <div>
       <Navbar />
-      <main className="error-msg">
+      <main>
+        <div className="error-msg">
+          <h1>ERROR</h1>
+          <p>Page not found.</p>
+        </div>
         <img src={Crying} className="gif" />
-        <h1>ERROR</h1>
-        <p>Page not found.</p>
       </main>
       <Footer />
     </div>
