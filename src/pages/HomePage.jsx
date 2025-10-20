@@ -6,7 +6,7 @@ export default function HomePage() {
     <div>
       <Navbar />
       <main className="">
-        <h1>HOME</h1>
+        <h1>WELCOME</h1>
       </main>
       <Footer />
     </div>
