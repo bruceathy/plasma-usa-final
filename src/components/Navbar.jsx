@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
 export default function Navbar() {
-  // ADD NAVLINKS INSTEAD OF UNORDERED LIST WITH LINKS
   return (
     <nav>
-      <p>PLASMA USA</p>
+      <NavLink className="logo" to="/">
+        PLASMA USA
+      </NavLink>
       <ul>
         <li>
-          <a className="links" href="/index.html">
+          <NavLink className="links" to="/Vitals">
             Vitals
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

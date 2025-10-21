@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+// use the Link component to navigate to the VitalsPage
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
