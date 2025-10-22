@@ -42,10 +42,6 @@ nav p {
   font-size: 1.2rem;
 }
 
-nav ul {
-  list-style-type: none;
-}
-
 main {
   margin: 3rem auto;
   text-align: center;
@@ -72,6 +68,23 @@ th {
   font-weight: 500;
 }
 
+.menu-option {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  max-width: 10%;
+  border-radius: 5px;
+}
+
+.option-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+}
+
 input:hover {
   background-color: #cdcdcd;
 }
@@ -84,16 +97,6 @@ tr:nth-child(9) {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-.links {
-  color: #fff;
-  text-decoration: none;
-}
-
-.links:hover {
-  color: #e30202;
-  cursor: pointer;
 }
 
 .info {

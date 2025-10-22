@@ -9,6 +9,13 @@ export default function HomePage() {
       <Navbar />
       <main className="">
         <h1>WELCOME</h1>
+        <section>
+          <div className="menu-option">
+            <Link className="option-link" to="/Vitals">
+              Vitals
+            </Link>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>
