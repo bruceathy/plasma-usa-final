@@ -7,12 +7,17 @@ export default function HomePage() {
   return (
     <div>
       <Navbar />
-      <main className="">
+      <main className="home-page">
         <h1>WELCOME</h1>
-        <section>
+        <section className="menu-list">
           <div className="menu-option">
             <Link className="option-link" to="/Vitals">
               Vitals
+            </Link>
+          </div>
+          <div className="menu-option">
+            <Link className="option-link" to="*">
+              Search Donor
             </Link>
           </div>
         </section>

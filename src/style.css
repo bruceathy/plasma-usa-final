@@ -68,20 +68,36 @@ th {
   font-weight: 500;
 }
 
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu-option {
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  max-width: 10%;
+  padding: 1rem;
+  width: 9.2rem;
   border-radius: 5px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .option-link {
   color: #000;
   text-decoration: none;
   font-size: 1.2rem;
+}
+
+.option-link:hover {
+  text-decoration: underline;
 }
 
 input:hover {
@@ -200,7 +216,7 @@ tr:nth-child(9) {
 .gif {
   border-radius: 20rem;
   height: 40%;
-  margin-bottom: 1.7rem;
+  margin-bottom: 1rem;
 }
 
 .error-text {
@@ -226,7 +242,7 @@ tr:nth-child(9) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2rem;
+  margin: 0.8rem 0;
 }
 
 .error-msg h1 {
@@ -236,6 +252,11 @@ tr:nth-child(9) {
 
 .error-msg p {
   font-size: 1.5rem;
+}
+
+.return-home {
+  color: #000;
+  cursor: pointer;
 }
 
 @media (max-width: 320px) {
