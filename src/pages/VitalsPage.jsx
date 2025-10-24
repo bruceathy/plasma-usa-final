@@ -4,10 +4,10 @@ import VitalsChart from "../components/VitalsChart";
 
 export default function VitalsPage() {
   return (
-    <div>
+    <>
       <Navbar />
       <VitalsChart />
       <Footer />
-    </div>
+    </>
   );
 }
