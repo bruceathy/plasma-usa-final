@@ -6,10 +6,7 @@ export default function VitalsPage() {
   return (
     <div>
       <Navbar />
-      <main id="main">
-        <VitalsChart />
-      </main>
-
+      <VitalsChart />
       <Footer />
     </div>
   );
