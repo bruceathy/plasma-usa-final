@@ -1,20 +1,14 @@
 import { Link } from "react-router-dom";
+import MenuOpt from "./MenuOpt";
 
 export default function HomeSec() {
   return (
     <main className="home-page">
       <h1>WELCOME</h1>
       <section className="menu-list">
-        <div className="menu-option">
-          <Link className="option-link" to="/Vitals">
-            Vitals
-          </Link>
-        </div>
-        <div className="menu-option">
-          <Link className="option-link" to="*">
-            Search Donor
-          </Link>
-        </div>
+        <MenuOpt text="Vitals" location={"/Vitals"} />
+        <MenuOpt text="Search Donors" location={"/Donors"} />
+        <MenuOpt text="Equipment" location={"/Equipment"} />
       </section>
     </main>
   );
