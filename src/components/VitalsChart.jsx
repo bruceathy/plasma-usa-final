@@ -1,4 +1,4 @@
-// USE REACT QUERY TO GET DONOR INFO
+
 export default function VitalsChart() {
   return (
     <main id="main">
