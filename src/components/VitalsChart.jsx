@@ -1,4 +1,13 @@
 // USE REACT QUERY TO GET DONOR INFO
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+
+const userAPI = "https://randomuser.me/api";
+
+const fetchUser = async () => {
+  const res = await fetch(userAPI);
+  return res.json();
+};
+
 export default function VitalsChart() {
   return (
     <main id="main">
