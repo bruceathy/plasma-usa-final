@@ -5,6 +5,7 @@ const userAPI = "https://randomuser.me/api";
 
 const fetchUser = async () => {
   const res = await fetch(userAPI);
+  if (!res.ok) throw new Error("Network response was not ok");
   return res.json();
 };
 
