@@ -14,14 +14,14 @@ let passedVitals = [];
 
 getUser();
 
-function takeAction() {
+export function takeAction() {
   main.innerHTML = `
     <div class="result">
     <h1>Donor Passed Screening</h1>
     <button onclick="location.reload()">Next Donor</button>
     </div>`;
-
   passedVitals = [];
+  alert("Please fill out all vitals!");
 }
 
 // GETS RANDOM USER
