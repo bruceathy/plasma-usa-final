@@ -1,8 +1,8 @@
 // USE REACT QUERY TO GET DONOR INFO
 // USE GITHUB TO REVIEW ANIMELIST PROJECT FOR HELP
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+// import { useQuery, useQueryClient } from "@tanstack/react-query";
 
-import { takeAction } from "../../utils";
+// import { takeAction } from "../../utils";
 
 const fetchUser = async () => {
   try {
@@ -91,7 +91,7 @@ export default function VitalsChart() {
             type="button"
             className="check-btn"
             id="result-btn"
-            onClick={takeAction}
+            // onClick={takeAction}
           >
             Check Results
           </button>
