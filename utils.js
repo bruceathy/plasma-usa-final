@@ -1,5 +1,4 @@
 // const main = document.getElementById("main");
-// const profile = document.getElementById("profile");
 // const weight = document.getElementById("weight-input");
 // const armCheck = document.getElementById("arm-input");
 // const temperature = document.getElementById("temp-input");
@@ -12,8 +11,6 @@
 
 // let passedVitals = [];
 
-// getUser();
-
 // export function takeAction() {
 //   main.innerHTML = `
 //     <div class="result">
@@ -22,29 +19,6 @@
 //     </div>`;
 //   passedVitals = [];
 //   alert("Please fill out all vitals!");
-// }
-
-// // GETS RANDOM USER
-// async function getUser() {
-//   const res = await fetch("https://randomuser.me/api");
-//   const data = await res.json();
-//   const user = data.results[0];
-
-//   profile.innerHTML = `<img
-//           class="profile-pic"
-//           id="donor"
-//           src="${user.picture.large}"
-//           alt="donor profile picture"
-//         />
-//         <div class="info">
-//           <h2>
-//   ${user.name.first} ${user.name.last}
-//           </h2>
-//           <p><strong>Birthdate: </strong>${user.dob.date.substring(0, 10)}</p>
-//           <p><strong>Gender: </strong>${user.gender}</p>
-//           <p><strong>Donor Number: </strong>${user.id.value}</p>
-//           <p><strong>Plasma Type: </strong>Non-GHA</p>
-//         </div>`;
 // }
 
 // // FINISH TAKE ACTION BUTTON
