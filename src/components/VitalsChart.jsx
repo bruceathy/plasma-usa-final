@@ -1,25 +1,17 @@
-// USE REACT QUERY TO GET DONOR INFO
-// USE GITHUB TO REVIEW ANIMELIST PROJECT FOR HELP
-// import { useQuery, useQueryClient } from "@tanstack/react-query";
-
+import DonorInfo from "./DonorInfo";
 // import { takeAction } from "../../utils";
-
-const fetchUser = async () => {
-  try {
-    const response = await fetch("https://randomuser.me/api");
-    const data = await response.json();
-    return data.results[0];
-  } catch (error) {
-    console.error(error);
-    throw new Error("Failed to fetch user data");
-  }
-};
 
 export default function VitalsChart() {
   return (
     <main id="main">
       <section className="screening-info">
-        <div className="profile"></div>
+        <DonorInfo
+          first="Big"
+          last="Dawg"
+          dob="01/31/2000"
+          gender="Male"
+          donorNum="123545"
+        />
         <div className="vitals">
           <table>
             <tr>

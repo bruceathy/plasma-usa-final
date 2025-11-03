@@ -1,0 +1,47 @@
+// USE REACT QUERY TO GET DONOR INFO
+// USE GITHUB TO REVIEW ANIMELIST PROJECT FOR HELP
+// import { useQuery, useQueryClient } from "@tanstack/react-query";
+
+const fetchUser = async () => {
+  try {
+    const response = await fetch("https://randomuser.me/api");
+    const data = await response.json();
+    return data.results[0];
+  } catch (error) {
+    console.error(error);
+    throw new Error("Failed to fetch user data");
+  }
+};
+
+export default function DonorInfo({ first, last, dob, gender, donorNum }) {
+  return (
+    <div className="profile">
+      <img
+        class="profile-pic"
+        id="donor"
+        src="${user.picture.large}"
+        alt="donor profile picture"
+      />
+      <div class="info">
+        <h2>
+          {first} {last}
+        </h2>
+        <p>
+          <strong>Birthdate: </strong>
+          {dob}
+        </p>
+        <p>
+          <strong>Gender: </strong>
+          {gender}
+        </p>
+        <p>
+          <strong>Donor Number: </strong>
+          {donorNum}
+        </p>
+        <p>
+          <strong>Plasma Type: </strong>Non-GHA
+        </p>
+      </div>
+    </div>
+  );
+}
