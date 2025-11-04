@@ -29,8 +29,9 @@ const fetchUser = async () => {
   try {
     const response = await fetch("https://randomuser.me/api");
     const data = await response.json();
-    console.log(data);
-    return data.results[0];
+    const user = data.results[0];
+    console.log(user);
+    return user;
   } catch (error) {
     console.error(error);
     throw new Error("Failed to fetch user data");
