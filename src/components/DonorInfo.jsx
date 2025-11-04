@@ -29,12 +29,15 @@ const fetchUser = async () => {
   try {
     const response = await fetch("https://randomuser.me/api");
     const data = await response.json();
+    console.log(data);
     return data.results[0];
   } catch (error) {
     console.error(error);
     throw new Error("Failed to fetch user data");
   }
 };
+
+fetchUser();
 
 export default function DonorInfo({ first, last, dob, gender, donorNum }) {
   return (
