@@ -2,6 +2,8 @@
 // USE GITHUB TO REVIEW ANIMELIST PROJECT FOR HELP
 // import { useQuery, useQueryClient } from "@tanstack/react-query";
 
+import { useQuery } from "@tanstack/react-query";
+
 // GETS RANDOM USER (this is from the javascript file)
 // async function getUser() {
 //   const res = await fetch("https://randomuser.me/api");
