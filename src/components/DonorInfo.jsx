@@ -36,7 +36,7 @@ const fetchUser = async () => {
     return user;
   } catch (error) {
     console.error(error);
-    throw new Error("Failed to fetch user data");
+    throw new Error("Unable to fetch user data");
   }
 };
 
