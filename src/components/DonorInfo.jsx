@@ -43,7 +43,7 @@ const fetchUser = async () => {
 fetchUser();
 
 export default function DonorInfo({ first, last, dob, gender, donorNum }) {
-  const { data: user } = useQuery(["user"], fetchUser);
+
   return (
     <div className="profile">
       <img
