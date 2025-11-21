@@ -1,6 +1,4 @@
 // USE REACT QUERY TO GET DONOR INFO
-// USE GITHUB TO REVIEW ANIMELIST PROJECT FOR HELP
-// import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 import { useQuery } from "@tanstack/react-query";
 
@@ -40,10 +38,7 @@ const fetchUser = async () => {
   }
 };
 
-fetchUser();
-
 export default function DonorInfo({ first, last, dob, gender, donorNum }) {
-
   return (
     <div className="profile">
       <img
