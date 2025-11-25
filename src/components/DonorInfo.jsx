@@ -38,7 +38,7 @@ const fetchUser = async () => {
   }
 };
 
-export default function DonorInfo({ first, last, dob, gender, donorNum }) {
+export default function DonorInfo() {
   const { data: user } = useQuery(["user"], fetchUser);
   return (
     <div className="profile">
@@ -50,19 +50,19 @@ export default function DonorInfo({ first, last, dob, gender, donorNum }) {
       />
       <div class="info">
         <h2>
-          {user.name.first} {last}
+          {user.name.first} {user.name.last}
         </h2>
         <p>
           <strong>Birthdate: </strong>
-          {dob}
+          {user.dob.date.substring(0, 10)}
         </p>
         <p>
           <strong>Gender: </strong>
-          {gender}
+          {user.gender}
         </p>
         <p>
           <strong>Donor Number: </strong>
-          {donorNum}
+          {user.id.value}
         </p>
         <p>
           <strong>Plasma Type: </strong>Non-GHA

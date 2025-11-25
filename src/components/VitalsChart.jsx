@@ -5,13 +5,7 @@ export default function VitalsChart() {
   return (
     <main id="main">
       <section className="screening-info">
-        <DonorInfo
-          first="Big"
-          last="Dawg"
-          dob="01/31/2000"
-          gender="Male"
-          donorNum="123545"
-        />
+        <DonorInfo />
         <div className="vitals">
           <table>
             <tbody>
