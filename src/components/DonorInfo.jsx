@@ -30,7 +30,7 @@ const fetchUser = async () => {
     const response = await fetch("https://randomuser.me/api");
     const data = await response.json();
     const user = data.results[0];
-    console.log(user.name.first);
+    console.log(user.name.last + " " + user.name.first);
     return user;
   } catch (error) {
     console.error(error);
@@ -38,8 +38,10 @@ const fetchUser = async () => {
   }
 };
 
+fetchUser();
+
 export default function DonorInfo() {
-  const { data: user } = useQuery(["user"], fetchUser);
+  const { data: user } = useQuery("user", fetchUser);
   return (
     <div className="profile">
       <img
