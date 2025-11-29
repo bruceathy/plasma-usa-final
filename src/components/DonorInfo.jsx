@@ -1,6 +1,6 @@
 // USE REACT QUERY TO GET DONOR INFO
 
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 // GETS RANDOM USER (this is from the javascript file)
 // async function getUser() {
@@ -42,6 +42,7 @@ fetchUser();
 
 export default function DonorInfo() {
   const { data: user } = useQuery("user", fetchUser);
+
   return (
     <div className="profile">
       <img
