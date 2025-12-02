@@ -22,11 +22,7 @@ export default function VitalsChart() {
               <tr>
                 <td>Weight</td>
                 <td id="weight">
-                  <input
-                    type="text"
-                    id="weight-input"
-                    onMouseOut={checkWeight}
-                  />{" "}
+                  <input type="text" id="weight-input" onInput={checkWeight} />{" "}
                   lbs
                 </td>
                 <td id="weight-result"></td>
