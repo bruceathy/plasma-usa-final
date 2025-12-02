@@ -1,7 +1,10 @@
 import DonorInfo from "./DonorInfo";
-// import { takeAction } from "../../utils";
+import { checkWeight } from "../../utils";
 
 export default function VitalsChart() {
+  // const takeAction = () => {
+  //   console.log("TEST");
+  // };
   return (
     <main id="main">
       <section className="screening-info">
@@ -17,7 +20,12 @@ export default function VitalsChart() {
               <tr>
                 <td>Weight</td>
                 <td id="weight">
-                  <input type="text" id="weight-input" /> lbs
+                  <input
+                    type="text"
+                    id="weight-input"
+                    onMouseOut={checkWeight}
+                  />{" "}
+                  lbs
                 </td>
                 <td id="weight-result"></td>
               </tr>

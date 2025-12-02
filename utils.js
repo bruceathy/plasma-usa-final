@@ -22,7 +22,7 @@ export function takeAction() {
 }
 
 // FINISH TAKE ACTION BUTTON
-function checkWeight() {
+export function checkWeight() {
   if (weight.value.trim() === "") {
     return;
   } else if (weight.value > 109 && weight.value < 401) {

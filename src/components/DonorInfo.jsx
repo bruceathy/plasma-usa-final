@@ -1,6 +1,6 @@
 // USE REACT QUERY TO GET DONOR INFO
 
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 
 // GETS RANDOM USER (this is from the javascript file)
 // async function getUser() {
@@ -41,7 +41,7 @@ const fetchUser = async () => {
 fetchUser();
 
 export default function DonorInfo() {
-  const { data: user } = useQuery("user", fetchUser);
+  // const { data: user } = useQuery("user", fetchUser);
 
   return (
     <div className="profile">
@@ -52,20 +52,18 @@ export default function DonorInfo() {
         alt="donor profile picture"
       />
       <div class="info">
-        <h2>
-          {user.name.first} {user.name.last}
-        </h2>
+        <h2>{/* {user.name.first} {user.name.last} */}</h2>
         <p>
           <strong>Birthdate: </strong>
-          {user.dob.date.substring(0, 10)}
+          {/* {user.dob.date.substring(0, 10)} */}
         </p>
         <p>
           <strong>Gender: </strong>
-          {user.gender}
+          {/* {user.gender} */}
         </p>
         <p>
           <strong>Donor Number: </strong>
-          {user.id.value}
+          {/* {user.id.value} */}
         </p>
         <p>
           <strong>Plasma Type: </strong>Non-GHA
