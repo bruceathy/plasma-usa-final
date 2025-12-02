@@ -1,3 +1,5 @@
+// USE util.js TO ADD FUNCTIONALITY TO CHART
+
 import DonorInfo from "./DonorInfo";
 import { checkWeight } from "../../utils";
 
