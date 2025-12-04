@@ -1,4 +1,5 @@
 // USE util.js TO ADD FUNCTIONALITY TO CHART
+// prompt: covert this to react (the changeWeight function in util.js)
 
 import DonorInfo from "./DonorInfo";
 import { checkWeight } from "../../utils";
@@ -22,7 +23,7 @@ export default function VitalsChart() {
               <tr>
                 <td>Weight</td>
                 <td id="weight">
-                  <input type="text" id="weight-input" onInput={checkWeight} />{" "}
+                  <input type="text" id="weight-input" onChange={checkWeight} />{" "}
                   lbs
                 </td>
                 <td id="weight-result"></td>
