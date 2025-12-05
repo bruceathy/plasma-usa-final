@@ -2,36 +2,10 @@
 // prompt: covert this to react (the changeWeight function in util.js)
 
 import DonorInfo from "./DonorInfo";
-// import { checkWeight } from "../../utils";
+import { checkWeight } from "../../utils";
 
 export default function VitalsChart() {
   let passedVitals = []; // use to check if all vitals are passed
-  function checkWeight() {
-    if (weight.value.trim() === "") {
-      return;
-    } else if (weight.value > 109 && weight.value < 401) {
-      document.getElementById("weight-result").innerHTML = `
-      <div className="status-msg">
-        <p>PASS</p>
-        <i className='ph ph-check-circle'></i>
-      </div>`;
-      document.getElementById("weight").innerHTML = `<p>${weight.value}lbs</p>`;
-      passedVitals.push("PASS");
-    } else if (weight.value < 109 || weight.value > 401) {
-      document.getElementById("weight-result").innerHTML = `
-      <div className="status-msg">
-        <p>FAIL</p>
-        <i className='ph ph-x-circle'></i>
-        <button type="button" onClick="takeAction()" className="take-action">Take Action</button>
-      </div>`;
-      document.getElementById("weight").innerHTML = `<p>${weight.value}lbs</p>`;
-    } else {
-      document
-        .getElementById("weight")
-        .appendChild(document.createElement("div")).innerHTML =
-        "<p className='error-text'>Must be a number.</p>";
-    }
-  }
 
   return (
     <main id="main">
@@ -48,7 +22,7 @@ export default function VitalsChart() {
               <tr>
                 <td>Weight</td>
                 <td id="weight">
-                  <input type="text" id="weight-input" onKeyUp={checkWeight} />{" "}
+                  <input type="text" id="weight-input" onClick={checkWeight} />{" "}
                   lbs
                 </td>
                 <td id="weight-result"></td>
