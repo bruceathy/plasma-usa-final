@@ -2,7 +2,16 @@
 // prompt: covert this to react (the changeWeight function in util.js)
 
 import DonorInfo from "./DonorInfo";
-import { checkWeight } from "../../utils";
+import {
+  checkWeight,
+  checkArmCheck,
+  checkTemperature,
+  checkPulse,
+  checkSys,
+  checkDia,
+  checkHematocrit,
+  checkTotalProtein,
+} from "../../utils";
 
 export default function VitalsChart() {
   let passedVitals = []; // use to check if all vitals are passed

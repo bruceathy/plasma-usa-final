@@ -49,7 +49,7 @@ export function checkWeight() {
   }
 }
 
-function checkArmCheck() {
+export function checkArmCheck() {
   if (weight.value.trim() === "") {
     return;
   } else if (armCheck.value === "P" || armCheck.value === "p") {
@@ -76,7 +76,7 @@ function checkArmCheck() {
   }
 }
 
-function checkTemperature() {
+export function checkTemperature() {
   if (weight.value.trim() === "") {
     return;
   } else if (temperature.value > 94.9 && temperature.value < 99.6) {
@@ -107,7 +107,7 @@ function checkTemperature() {
   }
 }
 
-function checkPulse() {
+export function checkPulse() {
   if (weight.value.trim() === "") {
     return;
   } else if (pulse.value > 49 && pulse.value < 101) {
@@ -134,7 +134,7 @@ function checkPulse() {
   }
 }
 
-function checkSys() {
+export function checkSys() {
   if (weight.value.trim() === "") {
     return;
   } else if (sys.value > 89 && sys.value < 181) {
@@ -161,7 +161,7 @@ function checkSys() {
   }
 }
 
-function checkDia() {
+export function checkDia() {
   if (weight.value.trim() === "") {
     return;
   } else if (dia.value > 49 && dia.value < 101) {
@@ -188,7 +188,7 @@ function checkDia() {
   }
 }
 
-function checkHematocrit() {
+export function checkHematocrit() {
   if (weight.value.trim() === "") {
     return;
   } else if (hematocrit.value > 38 && hematocrit.value < 55) {
@@ -219,7 +219,7 @@ function checkHematocrit() {
   }
 }
 
-function checkTotalProtein() {
+export function checkTotalProtein() {
   if (weight.value.trim() === "") {
     return;
   } else if (totalProtein.value > 3.9 && totalProtein.value < 9.1) {
