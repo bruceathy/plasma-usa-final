@@ -2,6 +2,7 @@
 // prompt: covert this to react (the changeWeight function in util.js)
 
 import DonorInfo from "./DonorInfo";
+import TableRow from "./TableRow";
 import {
   checkWeight,
   checkArmCheck,
@@ -28,65 +29,70 @@ export default function VitalsChart() {
                 <th>Results</th>
                 <th>Results Status</th>
               </tr>
-              {/* CREATE A REUSABLE TABLE ROW COMPONENT FOR EACH VITAL(?) */}
-              <tr>
-                <td>Weight</td>
-                <td id="weight">
-                  <input type="text" id="weight-input" onClick={checkWeight} />{" "}
-                  lbs
-                </td>
-                <td id="weight-result"></td>
-              </tr>
-
-              <tr>
-                <td>Arm Check</td>
-                <td id="arm-check">
-                  <input type="text" id="arm-input" /> P/F
-                </td>
-                <td id="arm-result"></td>
-              </tr>
-              <tr>
-                <td>Temperature</td>
-                <td id="temperature">
-                  <input type="text" id="temp-input" /> &#x2109;
-                </td>
-                <td id="temp-result"></td>
-              </tr>
-              <tr>
-                <td>Pulse</td>
-                <td id="pulse">
-                  <input type="text" id="pulse-input" /> bpm
-                </td>
-                <td id="pulse-result"></td>
-              </tr>
-              <tr>
-                <td>BP-SYS</td>
-                <td id="sys">
-                  <input type="text" id="sys-input" /> mmHg
-                </td>
-                <td id="sys-result"></td>
-              </tr>
-              <tr>
-                <td>BP-DIA</td>
-                <td id="dia">
-                  <input type="text" id="dia-input" /> mmHg
-                </td>
-                <td id="dia-result"></td>
-              </tr>
-              <tr>
-                <td>Hematocrit</td>
-                <td id="hematocrit">
-                  <input type="text" id="hematocrit-input" /> &#37;
-                </td>
-                <td id="hematocrit-result"></td>
-              </tr>
-              <tr>
-                <td>Total Protein</td>
-                <td id="total-protein">
-                  <input type="text" id="protein-input" /> g/dl
-                </td>
-                <td id="protein-result"></td>
-              </tr>
+              <TableRow
+                vital="Weight"
+                rowID="weight"
+                inputID="weight-input"
+                action={checkWeight}
+                measurement={"lbs"}
+                resultID="weight-result"
+              />
+              <TableRow
+                vital="Arm Check"
+                rowID="arm-check"
+                inputID="arm-input"
+                action={checkArmCheck}
+                measurement={"P/F"}
+                resultID="arm-result"
+              />
+              <TableRow
+                vital="Temperature"
+                rowID="temperature"
+                inputID="temp-input"
+                action={checkTemperature}
+                measurement="&#x2109;"
+                resultID="temp-result"
+              />
+              <TableRow
+                vital="Pulse"
+                rowID="pulse"
+                inputID="pulse-input"
+                action={checkPulse}
+                measurement="bpm"
+                resultID="pulse-result"
+              />
+              <TableRow
+                vital="BP-SYS"
+                rowID="sys"
+                inputID="sys-input"
+                action={checkSys}
+                measurement="mmHg"
+                resultID="sys-result"
+              />
+              <TableRow
+                vital="BP-DIA"
+                rowID="dia"
+                inputID="dia-input"
+                action={checkDia}
+                measurement="mmHg"
+                resultID="dia-result"
+              />
+              <TableRow
+                vital="Hematocrit"
+                rowID="hematocrit"
+                inputID="hematocrit-input"
+                action={checkHematocrit}
+                measurement="&#37;"
+                resultID="hematocrit-result"
+              />
+              <TableRow
+                vital="Total Protein"
+                rowID="total-protein"
+                inputID="protein-input"
+                action={checkTotalProtein}
+                measurement="g/dl"
+                resultID="protein-result"
+              />
             </tbody>
           </table>
         </div>
