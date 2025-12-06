@@ -28,6 +28,7 @@ export default function VitalsChart() {
                 <th>Results</th>
                 <th>Results Status</th>
               </tr>
+              {/* CREATE A REUSABLE TABLE ROW COMPONENT FOR EACH VITAL(?) */}
               <tr>
                 <td>Weight</td>
                 <td id="weight">

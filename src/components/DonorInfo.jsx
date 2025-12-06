@@ -46,12 +46,12 @@ export default function DonorInfo() {
   return (
     <div className="profile">
       <img
-        class="profile-pic"
+        className="profile-pic"
         id="donor"
         src="${user.picture.large}"
         alt="donor profile picture"
       />
-      <div class="info">
+      <div className="info">
         <h2>{/* {user.name.first} {user.name.last} */}</h2>
         <p>
           <strong>Birthdate: </strong>
