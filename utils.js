@@ -11,6 +11,7 @@ const resultBtn = document.getElementById("result-btn");
 
 let passedVitals = [];
 
+// FINISH TAKE ACTION BUTTON
 export function takeAction() {
   main.innerHTML = `
     <div className="result">
@@ -21,7 +22,6 @@ export function takeAction() {
   alert("Please fill out all vitals!");
 }
 
-// FINISH TAKE ACTION BUTTON
 export function checkWeight() {
   if (weight.value.trim() === "") {
     return;
