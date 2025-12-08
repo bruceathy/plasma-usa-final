@@ -10,7 +10,7 @@ export default function TableRow({
     <tr>
       <td>{vital}</td>
       <td id={rowID}>
-        <input type="text" id={inputID} onClick={action} /> {measurement}
+        <input type="text" id={inputID} onChange={action} /> {measurement}
       </td>
       <td id={resultID}></td>
     </tr>
