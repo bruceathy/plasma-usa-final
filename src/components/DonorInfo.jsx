@@ -25,23 +25,23 @@ import { useQuery } from "@tanstack/react-query";
 //         </div>`;
 // }
 
-const fetchUser = async () => {
-  try {
-    const response = await fetch("https://randomuser.me/api");
-    const data = await response.json();
-    const user = data.results[0];
-    console.log(user.name.last + " " + user.name.first);
-    return user;
-  } catch (error) {
-    console.error(error);
-    throw new Error("Unable to fetch user data");
-  }
-};
-
-fetchUser();
-
 export default function DonorInfo() {
-  // const { data: user } = useQuery("user", fetchUser);
+  const {
+    isPending,
+    error,
+    data: user,
+  } = useQuery({
+    queryKey: ["userData"],
+    queryFn: () => fetch("https://randomuser.me/api").then((res) => res.json()),
+  });
+
+  if (isPending) {
+    return <div> Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
   return (
     <div className="profile">
@@ -52,7 +52,9 @@ export default function DonorInfo() {
         alt="donor profile picture"
       />
       <div className="info">
-        <h2>{/* {user.name.first} {user.name.last} */}</h2>
+        <h2>
+          {user.results[0].name.first} {user.results[0].name.last}
+        </h2>
         <p>
           <strong>Birthdate: </strong>
           {/* {user.dob.date.substring(0, 10)} */}
