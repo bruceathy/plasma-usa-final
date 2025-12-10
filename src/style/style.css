@@ -66,6 +66,18 @@ th {
   font-weight: 500;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #000000a7;
+  width: 100vw;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  white-space: nowrap;
+}
+
+/* HOME PAGE */
 .home-page {
   display: flex;
   flex-direction: column;
@@ -112,6 +124,7 @@ tr:nth-child(9) {
   font-size: 1.2rem;
 }
 
+/* VITALS PAGE */
 .info {
   margin-left: 1.2rem;
   text-align: left;
@@ -200,22 +213,6 @@ tr:nth-child(9) {
   color: #dedede;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-  color: #fff;
-  background-color: #000000a7;
-  width: 100vw;
-  font-size: 0.7rem;
-  padding: 0.2rem 0.6rem;
-  white-space: nowrap;
-}
-
-.gif {
-  border-radius: 20rem;
-  width: 25%;
-}
-
 .error-text {
   color: #b70000;
 }
@@ -235,6 +232,7 @@ tr:nth-child(9) {
   margin-left: 0.5rem;
 }
 
+/* ERROR PAGE */
 .error-msg {
   display: flex;
   flex-direction: column;

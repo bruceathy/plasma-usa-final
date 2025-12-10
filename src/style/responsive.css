@@ -1,5 +1,5 @@
 /* MOBILE SCREEN */
-@media (max-width: 320px) {
+@media (max-width: 430px) {
   .logo {
     margin: 0 auto;
     font-size: 2rem;
@@ -67,60 +67,18 @@
   }
 
   /* ERROR PAGE */
-}
-
-/* MOBILE SCREEN */
-@media (min-width: 321px) and (max-width: 425px) {
-  .logo {
-    margin: 0 auto;
-    font-size: 2rem;
-    padding: 0 0.6rem;
-    line-height: 1.5rem;
+  .error-msg h1 {
+    font-size: 5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
   }
-
-  /* HOME PAGE */
-  .home-page h1 {
-    font-size: 2.7rem;
-    line-height: 1.8rem;
+  .gif {
+    width: 80%;
   }
-
-  /* VITALS PAGE */
-  .info h2 {
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  input {
-    width: 60%;
-  }
-
-  .screening-info {
-    margin-top: 3.7rem;
-  }
-
-  .info a {
-    font-size: 1.9rem;
-  }
-
-  .info p {
-    font-size: 0.9rem;
-    line-height: 1rem;
-  }
-
-  .screening-info {
-    width: 97vw;
-  }
-
-  .vitals input {
-    width: 55%;
-  }
-
-  /* ERROR PAGE */
 }
 
 /* TABLET SCREEN */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 431px) and (max-width: 768px) {
   /* HOME PAGE */
 
   /* VITALS PAGE */

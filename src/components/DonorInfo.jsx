@@ -11,7 +11,7 @@ export default function DonorInfo() {
       <div className="profile">
         <div className="info">
           <h2>Loading Profile...</h2>
-          {/* <p>
+          <p>
             <strong>Birthdate: </strong>
           </p>
           <p>
@@ -22,7 +22,7 @@ export default function DonorInfo() {
           </p>
           <p>
             <strong>Plasma Type: </strong>Non-GHA
-          </p> */}
+          </p>
         </div>
       </div>
     );
