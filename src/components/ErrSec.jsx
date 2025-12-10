@@ -5,8 +5,7 @@ export default function ErrSec() {
   return (
     <main>
       <div className="error-msg">
-        <h1>ERROR</h1>
-        <p>Page not found.</p>
+        <h1>ERROR! Page Not Found</h1>
         <Link to="/" className="return-home">
           Return Home
         </Link>

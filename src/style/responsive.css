@@ -1,0 +1,173 @@
+/* MOBILE SCREEN */
+@media (max-width: 320px) {
+  .logo {
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 0 0.6rem;
+    line-height: 1.5rem;
+  }
+
+  nav ul {
+    color: #1d1b1b;
+  }
+
+  /* HOME PAGE */
+  .home-page h1 {
+    font-size: 2.7rem;
+    line-height: 2rem;
+  }
+
+  .menu-option {
+    margin: 0.5rem 0;
+  }
+  .menu-list {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  /* VITALS PAGE */
+  .screening-info {
+    width: 95%;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-pic {
+    width: 80%;
+  }
+
+  .info {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+
+  .info a {
+    font-size: 2.3rem;
+  }
+
+  .info p {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .vitals {
+    font-size: 0.8rem;
+  }
+
+  .vitals input {
+    width: 65%;
+  }
+
+  /* ERROR PAGE */
+}
+
+/* MOBILE SCREEN */
+@media (min-width: 321px) and (max-width: 425px) {
+  .logo {
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 0 0.6rem;
+    line-height: 1.5rem;
+  }
+
+  /* HOME PAGE */
+  .home-page h1 {
+    font-size: 2.7rem;
+    line-height: 1.8rem;
+  }
+
+  /* VITALS PAGE */
+  .info h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  .screening-info {
+    margin-top: 3.7rem;
+  }
+
+  .info a {
+    font-size: 1.9rem;
+  }
+
+  .info p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .screening-info {
+    width: 97vw;
+  }
+
+  .vitals input {
+    width: 55%;
+  }
+
+  /* ERROR PAGE */
+}
+
+/* TABLET SCREEN */
+@media (min-width: 426px) and (max-width: 768px) {
+  /* HOME PAGE */
+
+  /* VITALS PAGE */
+  .screening-info {
+    width: 90%;
+  }
+
+  .profile-pic {
+    height: 30%;
+    width: 30%;
+  }
+
+  .info {
+    margin-top: 0.3rem;
+    line-height: 1.5rem;
+  }
+
+  .info a {
+    font-size: 2.5rem;
+  }
+
+  .info :nth-child(2) {
+    margin-top: 0.5rem;
+  }
+
+  /* ERROR PAGE */
+}
+
+/* LAPTOP SCREEN */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* HOME PAGE */
+
+  /* VITALS PAGE */
+  .info h2 {
+    font-size: 2.5rem;
+  }
+  .info a {
+    font-size: 1.9rem;
+  }
+
+  .info p {
+    line-height: 1.2rem;
+  }
+
+  .vitals input {
+    width: 70%;
+  }
+
+  /* ERROR PAGE */
+}

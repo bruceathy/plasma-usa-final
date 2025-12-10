@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import "./style.css";
+import "./style/style.css";
+import "./style/responsive.css";
 
 import HomePage from "./pages/HomePage";
 import VitalsPage from "./pages/VitalsPage";
