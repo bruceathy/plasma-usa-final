@@ -1,6 +1,6 @@
 /* FINISH RESPONSIVENESS FOR TABLET SCREENS */
 
-/* MOBILE SCREEN */
+/****************************** MOBILE SCREEN ******************************/
 @media (max-width: 430px) {
   .logo {
     margin: 0 auto;
@@ -13,9 +13,9 @@
     color: #1d1b1b;
   }
 
-  /* HOME PAGE */
+  /****************************** HOME PAGE ******************************/
   .home-page h1 {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     line-height: 2rem;
   }
 
@@ -27,7 +27,7 @@
     margin-top: 1.5rem;
   }
 
-  /* VITALS PAGE */
+  /****************************** VITALS PAGE ******************************/
   .screening-info {
     width: 95%;
   }
@@ -79,9 +79,14 @@
   }
 }
 
-/* TABLET SCREEN */
+/****************************** TABLET SCREEN ******************************/
 @media (min-width: 431px) and (max-width: 768px) {
-  /* VITALS PAGE */
+  /****************************** HOME PAGE ******************************/
+  .home-page h1 {
+    font-size: 3rem;
+  }
+
+  /****************************** VITALS PAGE ******************************/
   .screening-info {
     width: 90%;
   }
@@ -104,28 +109,14 @@
     margin-top: 0.5rem;
   }
 
-  /* ERROR PAGE */
-}
-
-/* LAPTOP SCREEN */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* HOME PAGE */
-
-  /* VITALS PAGE */
-  .info h2 {
-    font-size: 2.5rem;
-  }
-  .info a {
-    font-size: 1.9rem;
+  /****************************** ERROR PAGE ******************************/
+  .error-msg h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .info p {
-    line-height: 1.2rem;
+  .gif {
+    width: 50%;
   }
-
-  .vitals input {
-    width: 70%;
-  }
-
-  /* ERROR PAGE */
 }
