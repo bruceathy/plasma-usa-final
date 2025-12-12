@@ -81,8 +81,6 @@
 
 /* TABLET SCREEN */
 @media (min-width: 431px) and (max-width: 768px) {
-  /* HOME PAGE */
-
   /* VITALS PAGE */
   .screening-info {
     width: 90%;
