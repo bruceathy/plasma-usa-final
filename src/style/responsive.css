@@ -86,7 +86,7 @@
 
   /****************************** VITALS PAGE ******************************/
   .screening-info {
-    width: 90%;
+    width: 100%;
   }
 
   .profile-pic {
@@ -107,6 +107,14 @@
     margin-top: 0.5rem;
   }
 
+  .profile {
+    border-radius: 0rem;
+  }
+
+  .check-results {
+    border-radius: 0rem;
+  }
+
   /****************************** ERROR PAGE ******************************/
   .error-msg h1 {
     font-size: 4rem;
@@ -116,5 +124,12 @@
 
   .gif {
     width: 50%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  /****************************** VITALS PAGE ******************************/
+  .screening-info {
+    width: 80%;
   }
 }
