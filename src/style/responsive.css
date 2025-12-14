@@ -86,7 +86,7 @@
 
   /****************************** VITALS PAGE ******************************/
   .screening-info {
-    width: 100%;
+    width: 90%;
   }
 
   .profile-pic {
@@ -107,12 +107,8 @@
     margin-top: 0.5rem;
   }
 
-  .profile {
-    border-radius: 0rem;
-  }
-
-  .check-results {
-    border-radius: 0rem;
+  .vitals input {
+    width: 60%;
   }
 
   /****************************** ERROR PAGE ******************************/
