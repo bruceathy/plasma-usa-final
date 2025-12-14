@@ -16,6 +16,10 @@ import {
 export default function VitalsTable() {
   let passedVitals = []; // use to check if all vitals are passed
 
+  function justTest() {
+    console.log("test");
+  }
+
   return (
     <>
       <div className="vitals">
@@ -30,7 +34,7 @@ export default function VitalsTable() {
               vital="Weight"
               rowID="weight"
               inputID="weight-input"
-              action={checkWeight}
+              action={justTest}
               measurement={"lbs"}
               resultID="weight-result"
             />
