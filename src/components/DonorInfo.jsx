@@ -18,7 +18,7 @@ export default function DonorInfo() {
             <strong>Gender: </strong>
           </p>
           <p>
-            <strong>Donor Number: </strong>
+            <strong>Donor ID: </strong>
           </p>
           <p>
             <strong>Plasma Type: </strong>Non-GHA
@@ -55,7 +55,7 @@ export default function DonorInfo() {
           {user.gender}
         </p>
         <p>
-          <strong>Donor Number: </strong>
+          <strong>Donor ID: </strong>
           {user.id.value}
         </p>
         <p>
