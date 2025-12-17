@@ -1,6 +1,4 @@
 // USE util.js TO ADD FUNCTIONALITY TO CHART
-// prompt: covert this to react (the changeWeight function in util.js)
-
 // prompt: change an imput element into the string that was typed into it
 
 import TableRow from "./TableRow";
@@ -19,7 +17,7 @@ export default function VitalsTable() {
   let passedVitals = []; // use to check if all vitals are passed
 
   function justTest() {
-    console.log("test");
+    alert("test");
   }
 
   return (
