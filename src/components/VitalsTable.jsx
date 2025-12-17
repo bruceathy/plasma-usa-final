@@ -1,5 +1,6 @@
 // USE util.js TO ADD FUNCTIONALITY TO CHART
-// prompt: change an imput element into the string that was typed into it
+// prompt: change an imput element into the p element that was typed into it
+import { useState } from "react";
 
 import TableRow from "./TableRow";
 import {
@@ -15,9 +16,11 @@ import {
 
 export default function VitalsTable() {
   let passedVitals = []; // use to check if all vitals are passed
+  const [weightVal, setWeightVal] = useState("");
 
   function justTest() {
-    alert("test");
+    // checkWeight();
+    // setWeightVal(weight.value);
   }
 
   return (
