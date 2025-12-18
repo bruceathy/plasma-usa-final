@@ -1,3 +1,6 @@
+import { useState } from "react";
+// use useState to change the input element into a p element with the input value
+
 export default function TableRow({
   vital,
   rowID,
@@ -6,6 +9,7 @@ export default function TableRow({
   resultID,
   measurement,
 }) {
+  const [value, setValue] = useState("");
   return (
     <tr>
       <td>{vital}</td>
