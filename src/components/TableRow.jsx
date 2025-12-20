@@ -9,7 +9,6 @@ export default function TableRow({
   resultID,
   measurement,
 }) {
-  const [value, setValue] = useState("");
   return (
     <tr>
       <td>{vital}</td>
